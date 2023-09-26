@@ -11,11 +11,12 @@ basic.showIcon(IconNames.Happy)
 
 // variable
 let temperature: number
+let fn = (a: string, b: number) => a + b
 
 input.onButtonPressed(Button.A, function () {
 // input
   temperature = input.temperature()
-  temperature = (input.temperature() + (273.15))
+  temperature = (input.temperature() +(273.15))
   temperature = Math.round(temperature)
   // output
   basic.showString('The temperature is: ' + (temperature).toString())
